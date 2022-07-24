@@ -1,7 +1,7 @@
 <?php
+// เชื่อมต่อฐานข้อมูล
+$connect=mysqli_connect("localhost","root","","mydata") or die ("เกิดข้อผิดพลาดเกิดขึ้น");
 
-$con=mysqli_connect("localhost","root","","mydata") or die ("เกิดข้อผิดพลาดเกิดขึ้น");
 
-echo "เชื่อมต่อสำเร็จ";
 
 ?>

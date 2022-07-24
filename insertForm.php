@@ -14,8 +14,8 @@
     
     <div class="container my-3">
         <h2 class="text-center">แบบฟอร์มบันทึกข้อมูล</h2>
-
-        <form action="insertData.php" method="post">
+        <!-- ส่งข้อมูลของ form -->
+        <form action="insertData.php" method="POST">
             <div class="form-group">
                 <label for="fisrtname">ชื่อ</label>
                 <input type="text" name="fname" id="" class="form-control">
@@ -23,6 +23,19 @@
             <div class="form-group">
                 <label for="lastname">นามสกุล</label>
                 <input type="text" name="lname" id="" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="gender">เพศ</label>
+                <input type="radio" name="gender" id="" value="male">ชาย
+                <input type="radio" name="gender" id="" value="female">หญิง
+                <input type="radio" name="gender" id="" value="other">อื่นๆ
+            </div>
+            <div class="form-group">
+                <label for="">ทักษะ</label>
+                <input type="checkbox" name="skills[]" id="" value="Java"> Java
+                <input type="checkbox" name="skills[]" id="" value="PHP"> PHP
+                <input type="checkbox" name="skills[]" id="" value="Python"> Python
+                <input type="checkbox" name="skills[]" id="" value="HTML"> HTML
             </div>
             <input type="submit" value="บันทึกข้อมูล" class="btn btn-success">
             <input type="reset" value="ล้างข้อมูล" class="btn btn-danger">
